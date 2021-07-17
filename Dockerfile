@@ -1,12 +1,8 @@
-FROM node:13-alpine
-
-WORKDIR /home/ec2-user/test/
-
-COPY package*.json ./
-
-RUN npm install
-
+FROM node:12.18-alpine
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+RUN npm install --production --silent && mv node_modules ../
 COPY . .
-
 EXPOSE 3000
-CMD [ "node", "index.js" ]
+CMD ["node", "./src/server/server.js"]
