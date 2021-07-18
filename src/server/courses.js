@@ -9,7 +9,8 @@ const courses = [
     { id:2, name:'React'},
     { id:3, name:'Docker'},
     { id:4, name:'AWS Developer Tools'},
-    { id:5, name:'GIT Hub and Pipelines'}
+    { id:5, name:'GIT Hub and Commands'},
+    { id:6, name:'CI/CD Pipeline with AWS ECS'}
 ];
 
 
