@@ -6,7 +6,7 @@ router.use(express.json());
 
 const courses = [
     { id:1, name:'Node Js'},
-    { id:2, name:'React'},
+    { id:2, name:'React JS'},
     { id:3, name:'Docker'},
     { id:4, name:'AWS Developer Tools'},
     { id:5, name:'GIT Hub and Commands'},
